@@ -14,7 +14,7 @@ search.addEventListener('click', () => {
         return;
 
 
-     container.style.height = '80vh'
+     container.style.height = '85vh'
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`)
         .then(response => response.json().then(json => {
