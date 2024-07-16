@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,body{
@@ -16,9 +24,15 @@ html,body{
     height: 100%;
     background-image: url('./assets/main-background.jpg');
     font-family: "Lato", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .container{
@@ -28,7 +42,8 @@ html,body{
     border-radius: 1rem;
     padding: 1.5rem ;
     border: 0.1rem solid #fff;
-    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
 }
 
 
@@ -57,6 +72,30 @@ html,body{
     border: 0.1rem solid #fff;
 }
 
+.input_Bar input::-webkit-input-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.input_Bar input::-moz-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.input_Bar input:-ms-input-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.input_Bar input::-ms-input-placeholder{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 .input_Bar input::placeholder{
     font-size: 1rem;
     text-transform: uppercase;
@@ -70,6 +109,8 @@ html,body{
     height: 3rem;
     background-color: transparent;
     border: none;
+    -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    -o-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 }
 
@@ -101,7 +142,8 @@ html,body{
 .weather-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .weather-deatil h2{
@@ -126,17 +168,27 @@ html,body{
 .weather-info{
     width: 100%;
     height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 2rem 0;
 }
 
 
 .humidity , .wind{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     text-align: center;
 }
 
@@ -165,7 +217,8 @@ html,body{
 .img-box{
     width: 100%;
     height: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .img-box img{
