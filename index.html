@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="container">
+            <div class="input_Bar">
+                <i class="ri-map-pin-fill"></i>
+                <input type="text" class="city" placeholder="Enter your location">
+                <button class="search"><i class="ri-search-line"></i></button>
+            </div>
+            <div class="weather-deatil">
+                <div class="weather-image">
+                    <img src="assets/cloud.png" alt="">
+                </div>
+                <h2 class="temperature"><i class="ri-celsius-line"></i></h2>
+                <h3 class="description"></h3>
+
+                <div class="weather-info">
+                    <div class="humidity">
+                        <i class="ri-water-percent-line"></i>
+                        <div class="hudidity-detail">
+                            <h4 class="humidity"></h4>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="ri-windy-fill"></i>
+                        <div class="wind-detail">
+                            <h4 class="wind"></h4>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="not-found">
+                <div class="img-box">
+                    <img src="assets/404.png" alt="">
+                </div>
+                <p>Oops! Location not found!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+        <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
